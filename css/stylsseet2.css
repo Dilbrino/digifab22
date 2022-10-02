@@ -1,0 +1,13 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 5px;
+}
+p{
+    padding: 10px 5px;
+}

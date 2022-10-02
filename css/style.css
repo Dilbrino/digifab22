@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+		*{
+			box-sizing: border-box;
+		}
+		html{
+			font-size: calc(1em + 1vw);
+		}
+		body{
+			font-family: 'Lato', sans-serif;
+		}
+		#page-header{
+			grid-area: header;
+			background-image: url("../bilder/adeolu-eletu-GUSPPE-NjH8-unsplash.jpg");
+			/*Photo by <a href="https://unsplash.com/@adeolueletu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adeolu Eletu</a> on <a href="https://unsplash.com/s/photos/digi-lap?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/ 
+			background-size: cover;
+			background-position:bottom;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+			height: 60vh;	
+		}
+		#page-header h1{
+			order: 1;
+			flex: 100%;
+			margin: 0;
+			color:rgb(211, 132);
+		}
+		#page-header h5{
+			order: 0;
+			margin: 0;
+			text-transform: uppercase;
+		}
+		#page-header > h5, h1{
+			color: rgb(157, 54, 54);
+			text-shadow: 10px 10px 10px white;
+		}
+		#article-header{
+			grid-area: header;
+		}
+		.grid-container > header{
+			
+			background-color: #877d6e;
+			background-size: cover;
+			background-position:bottom;	
+		}
+		.top-menu{
+			display: flex;
+			list-style: none;
+			gap: 10px;
+			margin: 15px;
+		}
+		.top-menu a {
+			text-decoration: none;
+			color: #000;
+			font-weight: 700;
+			padding: 0.5rem;
+		}
+		#active-page{
+			
+			background-color: #000;
+			color: rgb(184, 153, 153);
+			
+		}
+		p{
+			line-height: 1.7rem;
+		}
+		p, a{
+			
+			font-size: 0.7rem;
+			padding: 0.4rem;
+			
+			
+		}
+
+		h1{
+			font-size: 1.8rem;
+
+		}
+		#article-heading{
+			
+			color: black;
+			text-shadow: none;
+		}
+		
+		
+		main{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+
+		h3{
+			font-size: 1rem;
+		}
+
+		h4{
+			font-size: 0.8rem;
+		}
+
+		h5{
+			
+			font-size: 0.8rem;
+			padding: 1rem;
+			
+		}
+
+		.grid-container > *{
+			padding:  0.5rem;
+			margin:1px;
+		}
+		
+		.grid-container{
+			display: grid;
+			background-color: rgb(232, 246, 243);
+			grid-template-columns:  1fr 1fr 1fr;
+			grid-template-rows:  0.5fr auto 0.5fr;
+			column-gap: 0.5rem;
+			grid-template-areas: 	"header header header"
+									"nav nav nav"
+									"main main aside"
+									"footer  footer footer";
+		
+			grid-gap: 0.2rem;
+			font-size: 12px;
+			
+		}
+
+		nav{
+			grid-area: nav;
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid #000000;
+			height: 250px;
+		}
+
+		main{
+			grid-area: main;
+			display: flex;
+			flex-flow: row wrap;
+			gap: 20px;
+			align-self: center;
+		}
+
+		aside{
+			grid-area: aside;
+			display: grid;
+			flex-wrap: wrap;
+			justify-items: stretch;
+    		align-items: stretch;
+    		align-content: center;
+			
+			
+		}
+
+		
+		#google-btn :hover{
+			scale: 1.09;
+		}
+
+		#google-btn a{
+		
+			padding: 0.5rem 1rem;
+			background-color: #030507;
+			border-radius: 30px;
+			width: 160px;
+			color: #fff;
+			font-weight: 400;
+			text-decoration: none;
+	
+			
+		}
+		#slack-btn :hover{
+			scale: 1.09;
+		}
+
+		#slack-btn a{
+		
+			padding: 0.5rem 1rem;
+			background-color: #030507;
+			border-radius: 30px;
+			width: 160px;
+			color: #fff;
+			font-weight: 400;
+			text-decoration: none;
+	
+			
+		}
+		.topp{
+			border-radius: 40px;
+		}
+		.topp a{
+			display: grid;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0.5rem 1rem;
+			background-color: #030507;
+			border-radius: 30px;
+			color: #fff;
+			font-weight: 500;
+			text-decoration: none;
+			
+		}
+
+		footer{
+			grid-area: footer;
+			display: grid;
+			justify-content: center;
+			
+			border-top: 1px solid #040404;
+			background-color: rgb(232, 246, 243);
+		}
+		.footer p{
+			line-height: 0%;
+		
+		}
+		section{
+			display: flex;
+			flex-wrap: wrap;
+			flex-grow: 1;
+			padding: 1rem;
+			flex-basis: 30%;
+			min-width: 200px;
+			box-shadow: 10px 10px 10px #6b5151;
+			border: 1px solid #e4dcdc;
+			flex-direction: column;
+			justify-content: center;
+    		align-items: center;
+			
+		}
+
+		#section-page-content{
+			flex-direction: column;
+		}
+
+		section img{
+			width: 100%;
+		}
+		.top-menu li:hover{
+			background-color: rgb(232, 246, 243);
+		}
+	
+		.knapp {
+			border:2px solid black;
+			padding:3px;
+			border-radius:6px;
+			background-color: rgb(232, 246, 243);
+		
+			color: black;
+			
+		
+		}
+		
+		.knapp:hover{
+			background-color:gray;
+		}	
+		footer{
+		font-size: 0.6rem;
+		}
+		.top-menu{
+			display: flex !important;
+			flex-basis: auto;
+		}
+	
+	
+		
+		.dropdown-main{
+			display: none;
+			position: absolute;
+			background-color: #fff;
+			
+		}
+	
+		.top-menu .dropdown-point:hover > ul, ul li ul:hover{
+			display: flex;
+			flex-direction: column;
+		}
+	
+	
+		.dropdown-main li{
+			padding: 1rem;
+		}
+	
+		.dropdown-main li:hover{
+			background-color: #efefef;
+		}
+	
+	
+
+	
+@media only screen and (max-width:550px){
+	.grid-container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.4fr auto 0.4fr 0.1fr;
+		grid-template-areas: 	"header"
+								"nav"
+								"main"
+								"aside"
+								"footer";
+	}
+	
+	.top-menu{
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		gap: 10px;
+		padding: 2rem;
+	}
+
+	.top-menu a {
+		text-decoration: none;
+		color: #000;
+		font-weight: 700;
+		padding: 0.5rem;
+	}
+}
+@media only screen and (max-width:1200px) and (min-width:550px){
+	.grid-container{
+		padding: 1fr;
+		grid-template-columns:0.5fr 1fr;
+		grid-template-rows: 0.5fr auto auto auto auto;
+		grid-template-areas:
+		                 "header header"
+	                     "nav nav"
+	                     "main main"
+						 "aside aside"
+						 "footer footer"
+						
+						 
+	}
+	.top-menu{
+		display: flex !important;
+		flex-basis: auto;
+	}
+	
+
+
+}
+
+	
+	
+
+
+

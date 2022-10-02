@@ -1,0 +1,58 @@
+@import url("scss/scss/_colors.scss");
+@import url("scss/_artikelside.scss");
+
+#page-header h1{
+    order: 1;
+    flex: 100%;
+    margin: 0;
+    
+}
+#page-header h5{
+    order: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+#page-header > h5, h1{
+    color: $hvitt;
+    text-shadow: 10px 10px 10px  $hvitt;
+}
+#article-header{
+    grid-area: header;
+}
+.grid-container > header{
+    
+    background-color: rgb(232, 246, 243);
+    background-size: cover;
+    background-position:bottom;	
+}
+.top-menu{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+.top-menu a {
+    text-decoration: none;
+    color: $svart;
+    font-weight: 700;
+    padding: 1rem;
+}
+#active-page{
+    
+    background-color: $svart;;
+    color: $hvitt;;
+    
+}
+p, a{
+    font-size: 0.6rem;
+}
+
+h1{
+    font-size: 1.8rem;
+
+}
+#article-heading{
+    
+    color: $svart;
+    text-shadow: none;
+}
