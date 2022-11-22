@@ -114,6 +114,7 @@
 			display: grid;
 			background-color: rgb(232, 246, 243);
 			grid-template-columns:  1fr 1fr 1fr;
+
 			column-gap: 0.5rem;
 			grid-template-areas: 	"header header header"
 									"nav nav nav"
