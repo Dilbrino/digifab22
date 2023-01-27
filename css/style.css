@@ -141,7 +141,9 @@
 			gap: 20px;
 			align-self: center;
 		}
-
+		img{
+			width: 100%;
+		}
 		aside{
 			grid-area: aside;
 			display: grid;
