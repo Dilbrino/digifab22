@@ -143,7 +143,7 @@
 		}
 		img {
 			border-style: none;
-			width: 100%;
+			width: 40%;
 		}
 		aside{
 			grid-area: aside;
@@ -334,6 +334,9 @@
 	.top-menu{
 		display: flex !important;
 		flex-basis: auto;
+	}
+	.img{
+		width: 100%;
 	}
 	
 
