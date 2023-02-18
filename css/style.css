@@ -143,7 +143,7 @@
 		}
 		img {
 			border-style: none;
-			width: 100%;
+			width: 70%;
 		}
 		aside{
 			grid-area: aside;
@@ -211,7 +211,7 @@
 			justify-content: center;
 			
 			border-top: 1px solid #040404;
-			background-color: rgb(232, 246, 243);
+			background-color: rgb(255, 255, 255);
 		}
 		.footer p{
 			line-height: 0%;
@@ -247,7 +247,7 @@
 			border:2px solid black;
 			padding:3px;
 			border-radius:6px;
-			background-color: rgb(232, 246, 243);
+			background-color: white;
 		
 			color: black;
 			
@@ -285,7 +285,7 @@
 		}
 	
 		.dropdown-main li:hover{
-			background-color: #efefef;
+			background-color: #fffdfd;
 		}
 	
 	
