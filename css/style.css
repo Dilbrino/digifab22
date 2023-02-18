@@ -112,7 +112,7 @@
 		
 		.grid-container{
 			display: grid;
-			background-color: rgb(232, 246, 243);
+			background-color: rgb(251, 251, 251);
 			grid-template-columns:  1fr 1fr 1fr;
 
 			column-gap: 0.5rem;
