@@ -1,111 +1,246 @@
-
 <!DOCTYPE html>
-<html lang="no">
-    <head>
-	<title> Nettside for innleveringer </title>
-    <link rel="icon" type="image/x-icon" href="../digifab22/bilder/logo.webp">
-	<meta charset="UTF-8"/>
- 
-	<meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="her er mine nettside for DigiFab">
-	<meta name="keywords" content="DigiFab">
-    <meta name="author" content="Dilbrin Hasan">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="css/style.css" media="screen">
-	<link rel="stylesheet" href="stylsseet_2.css" media="print"/>  
-    
-  </head>
-	<body>
-	<div class="grid-container">
-		<header id="page-header">
-			<h1>Presentasjon</h1>
-		</header>
-        <nav>
+<html lang="nb">
+
+<head>
+
+    <title>PCB - Design</title>
+    <link rel="icon" type="image/x-icon" href="../newVers/bilder/logo.webp">
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="her er mine nettside for DigiFab">
+  <meta name="keywords" content="DigiFab">
+  <meta name="author" content="Dilbrin Hasan">
+  <link rel="canonical" href="https://example.com/%22/%3E">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="icon" type="image/x-icon" href="../digifab22/bilder/logo.webp">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
       
-            <ul class="top-menu">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="pcb.html" id="active-page">PCB Design</a></li>
+  <!-- Script for navbar -->
+  <script src="../newVers/script/navbar_script.js"></script>
 
-                <li><a href="elektronikk.html">Elektronikk</a></li>
+</head>
+
+<body>
+
+  <!-- side header -->
+  <div class="grid-container">
+      <header id="page-header">
+          
+          <h3 data-text="DigiFab">digifab</h3>
+      </header>
+
+      
+
+      <nav class="topnav" id="myTopnav">
+
+          <a class="logo" href="index.html"> <img id="logo-img"
+                  src="../newVers/bilder/logo.webp" alt="logo"></a>
+
+          <a href="index.html">Hjem</a>
+          <a href="meg.html">Presentasjon</a>
+          <a href="3d.html">3D printing</a>
+          <a href="elektronikk.html">Elektronikk</a>
+          <a href="pcb.html">PCB Design</a>
+          <a href="#">Git-repoet</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+
+          </a>
 
 
 
 
-                <li class="dropdown-point"> 
-                    <a href="#">Oppgave 1</a>
-                    <ul class="dropdown-main">
-                        <li><a href="meg.html">Presentasjon </a></li>
-                         
+      </nav>
+        <!-- Slutter navbar -->
+
+        <main id="article-page">
+           
+
+
+        
+
+
+        <section class="new">
+         
+
+            <article id="cms-side">
+                <h3> PCB desigen</h3>
+                <h4> Hva er PCB   </h4>
+                <p>
+                    PCB hva er det egentlig 
+                    PCB står for "Printed Circuit Board", på norsk kalt trykt kretskort. og den refererer til 
+                    prosessen med å utforme og planlegge layouten av kretskortet, som vil eller skal innholde de elektroniske komponenten som lager et elektronisk system.
+                    PCB-design er en viktig del av utviklingsprosessen for et elektronisk produkt,
+                    da det legger grunnlaget for hvordan komponentene vil samhandle med hverandre og hvordan systemet vil fungere som helhet.
+                    Og PCB desigen p[virker også ytelsen til systemet, og kosnadene ved produksjon.
+                    <h4> hva er en god PCB-design </h4>
+                <p> 
+
+                    En god PCB desigen som vi har lært på labben med Fahad, vil ha et opåtimalt layout som gir minimal interferens mellom alle komponentene, gir god signalintegrert 
+                    og reduserer elektromagnetisk interferens og støy. I tillegg den må ha også riktig størrelse og plassering av alle komponenter, kretser og tilkoblinger, 
+                    og dette er fordi det er viktig for å sikre at systemt fungerer som vi forventet.   </p> 
+
+                    <h4> Hvorfor trenger vi PCB   </h4>
+                <p> 
+
+                    Vi trenger PCB fordi PCB-design brukes i en rekke applikasjone, f.eks.
+                    inkludert elektronikk i biler, medisinsk utstyr, kommunikasjonsteknologi, industrielle kontroller og mer, og .osv
+                    , men En liten feil i PCB- design kan føre til en rekke problemer som f.eks.
+                    funksjonsfeil i systemet, økt risiko for feil og skader på komponentene, og høyere kostnader for å fikse eller produsere om igjen. </p> 
+
+                    <h4> Strømforsyning </h4>
+                    <p>
+                        Jeg valgte å lage en PCB-design for enkel Strømforsyning, og valgte det fordi  den er en grunnleggende byggestein i mange elektroniske apparater.
+                        Strømforsyninger er ansvarlige for å levere pålitelig strøm til elektroniske komponenter,
+                        og uten en stabil og pålitelig strømforsyning kan elektroniske apparater ikke fungere som de skal.
+                        En enkel strømforsyning er spesielt nyttig for mindre prosjekter og hobbyelektronikk,
+                        som ikke krever mye strøm. Disse prosjektene kan inkludere Arduino-baserte prosjekter, hobbyrobotikk, LED-belysning og mer.
+                        <strong> En annen fordel med å lage en enkel strømforsyning </strong> er at den kan være relativt enkel å designe og bygge.
+                        Med de riktige komponentene og verktøyene kan du enkelt sette sammen en strømforsyning som er tilpasset dine spesifikke behov, og 
+                    </p>
+                 
+
+
+                    <h4> Fremgangsmåte for å lage en PCB-design i Eagle programmet</h4>
+                    <p>
+
+                        Først åpne Egale-programmet og velg en ( New Project ) fra File-menyen, deretter gi prosjektet ditt et navn, og lagre det på datamaskinen.
+                        Velg en passende krets for å lage transformeren din. søk å finn på slike kretser i Eagle biblioteket eller på nettet i Autodesk eagle library,
+                        Åpne biblioteket med komponenter og velg de transformator-komponentene du vil bruke i designet ditt.
+                        Du kan også opprette dine egne komponenter ved hjelp av Eagle sin Device Editor.
+                        Plasser komponentene på PCB-layoutet i henhold til designkravene, men her Husk å legge til tilkoblingspunktene for primær- og sekundærviklingene.
+                        Koble komponentene sammen ved hjelp av Eagle's "Net" funksjon. Sørg for å opprette separate net for primær- og sekundærviklingene.
+                        Når du er ferdig med å legge til alle komponentene og koble dem sammen,
+                        kan du bruke Eagle's Design Rule Checker (DRC) for å sjekke designet ditt for feil og advarsler.
+                        Når du har sjekket og bekreftet at designet ditt er korrekt, kan du eksportere designet ditt i Gerber-format,
+                        som er en standard format for PCB-produksjon. og når du ferdig med det, du kan lagre Greber filen og, og kontakte faglærere for å få den laget et fysisk kretskort.
+
+
+                        <Strong> NB: VI MÅ HUSKE AT PCB DESGIN AV EN TRANSFORMER KAN VÆRE KOPMLISERT OG KREVER KUNNSKAP OM ELEKTRONIK,
+                             SÅ HVIS DU HAR ERFARING MED DET KAN DET VÆRE LURT Å SPØRRE OG SØKE FRA FAHAD OG MICHAEL</Strong>
+                    </p>
+
+
+                    <h4> Utstyr</h4>
+                    <p> har laget jeg  en enkel strømforsyning ved hjelp av en VR 11 transformator og noen tilleggs komponenter i Eagle programmet.
+                        La oss se på hver av komponentene og deres funksjon i designet mitt:         </p>
+
+                        <ul>
+                        <li>
+                        <p> VR 11 transformator: Dette er en transformator med en primær- og sekundærvikling som konverterer høyspent AC-strøm til lavspenning DC-strøm.
+                            og her koblet jeg  primærviklingen til strømkilden og sekundærviklingene til resten av kretsen.</p>
+                        </li>
+                        <li>
+                            <p>Fire dioder: Disse diodene, som kan være likeretterdioder, brukes til å konvertere den vekslede strømmen fra sekundærviklingene til en ensrettet DC-strøm.</p>
+                        </li>
+                        <li>
+                            <p>  Og jeg brukte en motstand, og denne motstanden brukes som en del av spenningsreguleringen,og begrenser strømmen som går gjennom spenningsregulatoren.</p>
+                        </li>
+                        <li>
+                            <p>  To kondensatorer: Disse kondensatorene er plassert for å filtrere bort støy og glatte ut spenningen.</p>
+                        </li>
+                        <li>
+                            <p> En spenningsregulator: Denne regulator chipen, som kan være en LM317 eller lignende, regulerer spenningen til en konstant verdi og sikrer stabil drift av kretsen.</p>
+                        </li>
+                        <li>
+                            <p> To terminalblokker: Disse terminalblokkene brukes som tilkoblingspunkter for inngangs- og utgangsstrøm til kretsen.</p>
+                        </li>
+                       
+                      
+                        
                     </ul>
-              
-            
+                    <img class="img-mave" src="../newVers/bilder/pcb_parts.png"
+                    alt="">
+                    <br>
+                    <br>
+                    <img class="img-mave" src="../newVers/bilder/schematics.png"
+                    alt="">
+                        
+                   <p>
+                        Jeg fikk hjelp fra Eagle ved å bruke ERC, som sa hva som var "Error" og "Warning"
+                            og den ser silk ut 
+                    </p>
+               
+      
                 
-                <li class="dropdown-point"> 
-                    <a href="#">Oppgave 2</a>
-                    <ul class="dropdown-main">
-                        <li><a href="3d.html">3D printing</a></li>
-                     
-                    </ul>
-             
-                <li class="dropdown-point"> 
-                    <a href="#">Oppgave 3</a>
-                    <ul class="dropdown-main">
-                        <li><a href="elektronikk.html">Elektronikk</a></li>
-                             
-                    </ul>
-                    <li class="dropdown-point"> 
-                        <a href="#">Git-repoet</a>
-                        <ul class="dropdown-main">
-                            <li><a href="https://github.com/Dilbrino/digifab22">Github repository</a></li>
-                                 
-                        </ul>
-                
-              
-                
-            </ul>
-        </nav>
-		<main id="article-page-content">
-			<header>
-				<h4 id="article-heading"></h4>
-			</header>
-		
-            <h5>Lorem Ipsum </h5>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                 but also the leap into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-               and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..
-  
-            </p>
-            
-		</main>
-		<aside>
-			   
-             
-				
-			
-			    <section id="google-btn">
-					<h5>Google knapp</h5>
-					<a href="https://www.google.no/search?q=cms+system&sxsrf=AOaemvIZWhbg7wViwdokB-3CuWtE5vW_HQ%3A1636631885510&source=hp&ei=TQWNYaKOG8mGxc8PmOuoOA&iflsig=ALs-wAMAAAAAYY0TXbnaXPUrOp_lSds2URw8pkL6NNNG&oq=c&gs_lcp=Cgdnd3Mtd2l6EAMYATIECCMQJzIECCMQJzIECCMQJzIOCC4QgAQQsQMQxwEQ0QMyCAgAEIAEELEDMg4ILhCABBCxAxDHARCjAjIICAAQgAQQsQMyDgguEIAEELEDEMcBENEDMg4ILhCABBCxAxDHARCjAjIFCC4QgAQ6BwgjEOoCECdQNFg0YMMRaAFwAHgAgAFEiAFEkgEBMZgBAKABAbABCg&sclient=gws-wiz">Google</a>
-				</section>
-			    <section id="slack-btn">
-                    <h5>Slack</h5>
-                    <a href="https://hiofmakerspace.slack.com/ssb/redirect">Slack rom</a>
-                </section>
-			</aside>
-		
-    
-    <footer class="footer">
-        <p> Dilbrin Hasan || 2022 Digifab</p>
+                    <img class="img-mave" src="../newVers/PCB_filer/schematics.png"
+                        alt="">
+                        <p>
+                            Her kan dere finne Schematic SCH filen inni pcb_filer .
+                            <a href="../digifab22/bilder/thinkcard_draw.pdf"> klikk her </a>
+                          
+                          </p>
+                          <p>
+                            jeg brukte autorouter for å flytte på elementene, og slik så det ut etter jeg autoroutet top, og bottom, 
+                        
+                          </p>
+
+                          
+                        <img class="img-mave" src="../newVers/bilder/ocb_image_2.png"
+                        alt="">
+                        <br>
+                        <img class="img-mave" src="../newVers/bilder/white_pcb.png"
+                        alt="">
+                        
+                        <p>
+                           på Github siden, står en pcb_filer som innholder BRD lyout og SCH filen. 
+                        
+                          </p>
+                       
+
+                          
+                      
+                          
+
+
+            </article> 
+
+                <div class="share">
+                    <button class="fa fa-brands fa-facebook delingsknapp" aria-label="delings kanpp til facebook"> <i
+                            class="fa-sharp fa-solid fa-share"></i></button>
+                    <button class="fa fa-brands fa-twitter delingsknapp" aria-label="delings kanpp til twitter"> <i
+                            class="fa-sharp fa-solid fa-share"></i></button>
+                    <button class="fa fa fa-brands fa-instagram" aria-label="delings kanpp til Instgram"> <i
+                            class="fa-sharp fa-solid fa-share"></i></button>
+                </div>
+ 
+            </main>
+          
        
-        
+        <footer class="footer">
             
-            </footer>
+          
+              
         
+        <section class="btn">
+       
+        <a href="https://hiofmakerspace.slack.com/ssb/redirect">Slack</a>
+        </section>
+        <div class="socialmedia">
+            <h4>Følg oss på sosiale medier </h4>
+                <ul class="socialmedia-list">
     
-	</div>
-	</body>
+                    <li> <a href="https://www.facebook.com/" class="fa fa-brands fa-facebook" aria-label=" kanpp til facebook"></a></a></li>
+
+                    <li> <a href="https://www.instagram.com/" class="fa fa-brands fa-twitter" aria-label=" kanpp til twitter"></a></a></li>
+                    <li><a href="https://no.pinterest.com/" class="fa fa-brands fa-pinterest" aria-label=" kanpp til pinterest"></a></a> </li>
+                 </ul>
+        </div>
+            <p> Dilbrin Hasan || 2022 DigiFab </p>
+            <p> E-post: dilbrinh@hiof.no</p>
+    
+
+
+        </footer>
+    </div>
+
+</body>
+
 </html>
