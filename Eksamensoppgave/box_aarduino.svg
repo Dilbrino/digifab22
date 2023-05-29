@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="236mm"
+   height="303mm"
+   viewBox="0 0 236 303"
+   version="1.1"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg4138"
+   sodipodi:docname="box_aarduino.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4142" />
+  <sodipodi:namedview
+     id="namedview4140"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.58287691"
+     inkscape:cx="490.66963"
+     inkscape:cy="592.74951"
+     inkscape:window-width="1500"
+     inkscape:window-height="930"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4138" />
+  <g
+     id="svgGroup"
+     stroke-linecap="round"
+     fill-rule="evenodd"
+     font-size="9pt"
+     stroke="#000"
+     stroke-width="0.25mm"
+     fill="none"
+     style="stroke:#000;stroke-width:0.945;fill:none;stroke-dasharray:none">
+    <path
+       d="M 0 153 L 0 176.795 L 2 176.795 L 2 191.425 L 0 191.425 L 0 206.055 L 2 206.055 L 2 220.685 L 0 220.685 L 0 235.315 L 2 235.315 L 2 249.945 L 0 249.945 L 0 264.575 L 2 264.575 L 2 279.205 L 0 279.205 L 0 293.835 L 0 303 L 13.425 303 L 13.425 301 L 28.055 301 L 28.055 303 L 42.685 303 L 42.685 301 L 57.315 301 L 57.315 303 L 71.945 303 L 71.945 301 L 86.575 301 L 86.575 303 L 100 303 L 100 279.205 L 98 279.205 L 98 264.575 L 100 264.575 L 100 249.945 L 98 249.945 L 98 235.315 L 100 235.315 L 100 220.685 L 98 220.685 L 98 206.055 L 100 206.055 L 100 191.425 L 98 191.425 L 98 176.795 L 100 176.795 L 100 162.165 L 100 153 L 86.575 153 L 86.575 155 L 71.945 155 L 71.945 153 L 57.315 153 L 57.315 155 L 42.685 155 L 42.685 153 L 28.055 153 L 28.055 155 L 13.425 155 L 13.425 153 L 0 153 Z"
+       id="front_outsideCutPath"
+       stroke="#FF0000"
+       stroke-width="0.1"
+       style="stroke:#FF0000;stroke-width:0.945;stroke-dasharray:none"
+       vector-effect="non-scaling-stroke" />
+    <path
+       d="M 105 153 L 105 176.795 L 103 176.795 L 103 191.425 L 105 191.425 L 105 206.055 L 103 206.055 L 103 220.685 L 105 220.685 L 105 235.315 L 103 235.315 L 103 249.945 L 105 249.945 L 105 264.575 L 103 264.575 L 103 279.205 L 105 279.205 L 105 293.835 L 105 303 L 110.685 303 L 110.685 301 L 125.315 301 L 125.315 303 L 131 303 L 131 279.205 L 133 279.205 L 133 264.575 L 131 264.575 L 131 249.945 L 133 249.945 L 133 235.315 L 131 235.315 L 131 220.685 L 133 220.685 L 133 206.055 L 131 206.055 L 131 191.425 L 133 191.425 L 133 176.795 L 131 176.795 L 131 162.165 L 131 153 L 125.315 153 L 125.315 155 L 110.685 155 L 110.685 153 L 105 153 Z"
+       id="left_outsideCutPath"
+       stroke="#FF0000"
+       stroke-width="0.1"
+       style="stroke:#FF0000;stroke-width:0.945;stroke-dasharray:none"
+       vector-effect="non-scaling-stroke" />
+    <path
+       d="M 138 275 L 138 280.685 L 136 280.685 L 136 295.315 L 138 295.315 L 138 301 L 149.425 301 L 149.425 303 L 164.055 303 L 164.055 301 L 178.685 301 L 178.685 303 L 193.315 303 L 193.315 301 L 207.945 301 L 207.945 303 L 222.575 303 L 222.575 301 L 234 301 L 234 295.315 L 236 295.315 L 236 280.685 L 234 280.685 L 234 275 L 222.575 275 L 222.575 273 L 207.945 273 L 207.945 275 L 193.315 275 L 193.315 273 L 178.685 273 L 178.685 275 L 164.055 275 L 164.055 273 L 149.425 273 L 149.425 275 L 138 275 Z"
+       id="top_outsideCutPath"
+       stroke="#FF0000"
+       stroke-width="0.1"
+       style="stroke:#FF0000;stroke-width:0.945;stroke-dasharray:none"
+       vector-effect="non-scaling-stroke" />
+    <path
+       d="M 0 0 L 0 23.795 L 2 23.795 L 2 38.425 L 0 38.425 L 0 53.055 L 2 53.055 L 2 67.685 L 0 67.685 L 0 82.315 L 2 82.315 L 2 96.945 L 0 96.945 L 0 111.575 L 2 111.575 L 2 126.205 L 0 126.205 L 0 140.835 L 0 150 L 13.425 150 L 13.425 148 L 28.055 148 L 28.055 150 L 42.685 150 L 42.685 148 L 57.315 148 L 57.315 150 L 71.945 150 L 71.945 148 L 86.575 148 L 86.575 150 L 100 150 L 100 126.205 L 98 126.205 L 98 111.575 L 100 111.575 L 100 96.945 L 98 96.945 L 98 82.315 L 100 82.315 L 100 67.685 L 98 67.685 L 98 53.055 L 100 53.055 L 100 38.425 L 98 38.425 L 98 23.795 L 100 23.795 L 100 9.165 L 100 0 L 86.575 0 L 86.575 2 L 71.945 2 L 71.945 0 L 57.315 0 L 57.315 2 L 42.685 2 L 42.685 0 L 28.055 0 L 28.055 2 L 13.425 2 L 13.425 0 L 0 0 Z"
+       id="back_outsideCutPath"
+       stroke="#FF0000"
+       stroke-width="0.1"
+       style="stroke:#FF0000;stroke-width:0.945;stroke-dasharray:none"
+       vector-effect="non-scaling-stroke" />
+    <path
+       d="M 105 0 L 105 23.795 L 103 23.795 L 103 38.425 L 105 38.425 L 105 53.055 L 103 53.055 L 103 67.685 L 105 67.685 L 105 82.315 L 103 82.315 L 103 96.945 L 105 96.945 L 105 111.575 L 103 111.575 L 103 126.205 L 105 126.205 L 105 140.835 L 105 150 L 110.685 150 L 110.685 148 L 125.315 148 L 125.315 150 L 131 150 L 131 126.205 L 133 126.205 L 133 111.575 L 131 111.575 L 131 96.945 L 133 96.945 L 133 82.315 L 131 82.315 L 131 67.685 L 133 67.685 L 133 53.055 L 131 53.055 L 131 38.425 L 133 38.425 L 133 23.795 L 131 23.795 L 131 9.165 L 131 0 L 125.315 0 L 125.315 2 L 110.685 2 L 110.685 0 L 105 0 Z"
+       id="right_outsideCutPath"
+       stroke="#FF0000"
+       stroke-width="0.1"
+       style="stroke:#FF0000;stroke-width:0.945;stroke-dasharray:none"
+       vector-effect="non-scaling-stroke" />
+    <path
+       d="M 138 242 L 138 247.685 L 136 247.685 L 136 262.315 L 138 262.315 L 138 268 L 149.425 268 L 149.425 270 L 164.055 270 L 164.055 268 L 178.685 268 L 178.685 270 L 193.315 270 L 193.315 268 L 207.945 268 L 207.945 270 L 222.575 270 L 222.575 268 L 234 268 L 234 262.315 L 236 262.315 L 236 247.685 L 234 247.685 L 234 242 L 222.575 242 L 222.575 240 L 207.945 240 L 207.945 242 L 193.315 242 L 193.315 240 L 178.685 240 L 178.685 242 L 164.055 242 L 164.055 240 L 149.425 240 L 149.425 242 L 138 242 Z"
+       id="bottom_outsideCutPath"
+       stroke="#FF0000"
+       stroke-width="0.1"
+       style="stroke:#FF0000;stroke-width:0.945;stroke-dasharray:none"
+       vector-effect="non-scaling-stroke" />
+  </g>
+  <ellipse
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.025;stroke-dasharray:none"
+     id="path377"
+     cx="216.52299"
+     cy="256.01462"
+     rx="7.6200504"
+     ry="7.4256434" />
+  <ellipse
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.025;stroke-dasharray:none"
+     id="path377-8"
+     cx="154.78897"
+     cy="257.37637"
+     rx="7.6200504"
+     ry="7.4256434" />
+</svg>
