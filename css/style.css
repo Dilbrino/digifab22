@@ -401,6 +401,9 @@ button:hover{
 	#article-heading{
 		justify-content: center;
 	}
+	.video-container {
+		padding-bottom: 75%; /* Juster høyde/bredde-forhold for iPad */
+	  }
 
 @media screen and (max-width: 690px) {
 	.topnav a:not(:first-child) {display: none;}
@@ -414,6 +417,9 @@ button:hover{
 		justify-content: space-between;
 		margin: 2rem;
 	}
+	.video-container {
+		padding-bottom: 100%; /* Juster høyde/bredde-forhold for mobiltelefoner */
+	  }
 }
 @media screen and (max-width: 690px) {
 	.topnav.responsive {position: relative;}
@@ -427,6 +433,7 @@ button:hover{
 	  display: block;
 	  text-align: left;
 	}
+	
 }
 
 }
