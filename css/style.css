@@ -237,8 +237,9 @@ article p {
 li:hover {
 	transform: rotate(360deg);
 }
-li > p{
-	display: grid;
+#artk_list{
+    display: grid;
+    justify-content: space-around;
 }
 
 h1 {
