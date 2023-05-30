@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+
+    <title>Eksamen oppgave</title>
+    <link rel="icon" type="image/x-icon" href="../digifab22//bilder/logo.webp">
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="her er mine nettside for DigiFab">
+  <meta name="keywords" content="DigiFab">
+  <meta name="author" content="Dilbrin Hasan">
+ 
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="icon" type="image/x-icon" href="../digifab22/bilder/logo.webp">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+      
+  <!-- Script for navbar -->
+  <script src="../digifab22/script/navbar_script.js"></script>
+
+</head>
+
+<body>
+
+  <!-- side header -->
+  <div class="grid-container">
+      <header id="page-header">
+          
+          <h3 data-text="DigiFab">digifab</h3>
+      </header>
+
+      
+
+      <nav class="topnav" id="myTopnav">
+
+        <a class="logo" href="index.html"> <img id="logo-img"
+            src="../digifab22/bilder/logo.webp" alt="logo"></a>
+
+    <a href="index.html">Hjem</a>
+    <a href="meg.html">Presentasjon</a>
+    <a href="3d.html">3D printing</a>
+    <a href="elektronikk.html">Elektronikk</a>
+    <a href="pcb.html">PCB Design</a>
+    <a href="eksamen.html">Eksamen</a>
+    <a href="https://github.com/Dilbrino/digifab22">Git-repoet</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+
+    </a>
+
+
+
+
+      </nav>
+        <!-- Slutter navbar -->
+
+        <main id="article-page">
+        <section class="new">
+        
+            <article id="cms-side">
+                <h3>Vannplantesystem</h3>
+                <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/forside.png" alt="bilde som viser vannplantesystem">
+
+                <h4> Rapporten   </h4>
+                    <p>Denne rapporten designet og implementeringen av Arduino av et Arduino-basert vannplantesystem laget som er
+                     slutt prosjketet for DIGIFAB-faget</p>
+                <h4> Formålet med prosjektet </h4>
+                    <p> Formålet med prosjektet var å skape et effektivt og automatisert system for vanning av planter ved 
+                        hjelp av Arduino-teknologi.
+                    </p> 
+
+                <h4> Hvorfor valgte jeg dette prosjketet  </h4>
+                    <p> Dette vannplantesystemet er viktig for miljøet og klimaendringene fordi det bidrar til å redusere vannavfall,
+                    energiforbruk og klimautslipp. Ved å automatisk vanne plantene basert på jordens fuktighetsnivå, kan systemet
+                    spare vannressurser ved å unngå overvanning. Det reduserer også energiforbruket ved å aktivere vannpumpen bare
+                    når det er nødvendig. Dette fører til mer effektiv vanning og bedre avling, samtidig som det bidrar til bærekraftig
+                    plantedyrking. Her kan dere lese om Vannforvaltning og FNs bærekraftsmå. 
+                    </p> <a href="https://www.vannportalen.no/aktuelt/2019/vannforvaltning-og-fns-barekraftsmal/">
+                     Vannforvaltning og FNs bærekraftsmå </a>
+                    <p>
+                        Systemet som vi snakker om ble laget for å opprettholde optimale fuktighets nivåre i plante
+                        jorden ved kontrollere vanningen basert på jordens fuktighetsnivå. 
+                        Ved hejelp av funksjoner har dette vannplantesystemet evnen til å registrere fuktighetsnivået i jorden og ta beslutninger om vanning.
+                        Når jordsensoren(soil moisture sensor) registrerer at jorden er tørr og har behov for vann, aktiveres vannpumpen for å 
+                        tilføre vann til plantene.Når jordsensor (soil moisture sensor)  leser at den er en tilstrekkelig fuktighetsnivå,
+                        slås vannpumpen av.
+                    </p>
+                 
+
+
+                    <h4> Systemarkitekturen</h4>
+                    <p>
+                        1-Arduino Uno  bilde 
+
+                        2- Soil Moisture Sensor bilde 
+                        
+                        3- DC 12 v motor bilde 
+                        
+                        4-LCD 16x2-skjerm bilde 
+                        
+                        4- TIP 120 transistor bilde
+                    </p>
+
+
+                    <h4> Beskrivelse av systemarkitekturen</h4>
+                    <h5>Elektronikk</h5>
+                        <p> Jeg har brukt Arduino Uno som hovedkontrolleren i systemet mitt. der etter tenkte jeg på Soil Moisture Sensor fordi den er en
+                        viktig del av systemet og brukes til å måle fuktighetsnivået i jorden. Den er plassert i nærheten av plantens røtter og gir 
+                        informasjon om jordens fuktighetstilstand. Basert på denne informasjonen kan systemet ta beslutninger om når det er 
+                        behov for vanning. etter det tenktye på motoren som  er ansvarlig for å pumpe vannet fra en vannbeholder eller vannkilde til plantene. 
+                        Og grunn til at jeg vil ikke lage egen vannbeholder 3D eller med Plexiglass er at vannplantesystemet skal være mest mulig miljøvennlig 
+                        og at jeg skal ikke bruke ekstra metrialer siden vi har alle vannbeholder hjemme f.eks(flsker eller potte).  
+                        Og deretter jeg tenkte å bruke en LCD-skjerm med en oppløsning på 16x2 som en visuell grensesnitt for systemet. 
+                        Skjermen skal  vise informasjon om vannpumpens tilstand. For eksempel kan skjermen vise 
+                        "Water pump is OFF" når jordens fuktighet er tilstrekkelig, og "Water pump is ON" når vanning er i gang. 
+                        Og sist jeg valgte å bruke TIP 120 transistor  i forbindelse med DC motoren. Årsaken til å bruke en transistor
+                        som TIP120 var strømforsterkning, enkel kontroll og effektivitetsforbedring. 
+
+                        Først starte jeg med Tinkercad som hjelper å lage online modller som kjører på nettlesen. som dere kan se på bile ned over. 
+                        Årsaken til at jeg brukete det først var fordi at jeg vil være sikkert på systemet funker siden Tinkercad har Simulation funksjer.
+                        </p>
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+
+                        <h4>Metrialer </h4>
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                        <h4>Desigen og Implementering</h4>
+                        <ul>
+                        <li>
+                            <p> laser cutting-teknologi
+                            Jeg brukte laser cutting-teknologi for å lage en plexiglassboks hele vannplantesystemet mitt. Årsaken til at jeg valget det var todelt. 
+                            For det første ønsket jeg at systemet skulle være innendørs og ikke være vanntett. Plexiglass er et gjennomsiktig materiale som 
+                            tillater synlighet og gir en visuell presentasjon av systemet. Det gjør det enkelt å overvåke systemets komponenter og eventuelle 
+                            feil som kan oppstå.
+                            Den andre grunnen til å bruke laser cutting og plexiglass var at jeg ønsket å kunne identifisere og rette 
+                            eventuelle feil raskt. Ved å ha en gjennomsiktig boks, er det lettere å oppdage og diagnostisere eventuelle 
+                            tekniske feil eller feiljusteringer. Dette sparer tid og forenkler vedlikeholdet av systemet.
+                            Jeg brukte Boxmacker for å lage plexiglassboksen til systemet mitt. Jeg lastet ned en design og redigerte 
+                            den ved hjelp av Inkscape-programmet. Etter å ha gjort endringene og redigeringen på boksen, printet jeg den 
+                            ut på A3-ark.</p>
+                            <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                            <p>Årsaken til å bruke denne fremgangsmåten var å sikre at designen min var riktig før jeg brukte mye 
+                            plexiglass. Ved å printe ut designen på papir, fikk jeg en visuell representasjon av hvordan boksen 
+                            ville se ut. Dette tillot meg å sjekke størrelsen, hullene og endringene jeg hadde gjort.
+                            Etter å ha bekreftet at alt var riktig, kunne jeg trygt bruke laser cutting-teknologi for 
+                            å kutte ut designen på plexiglasset. Dette sikret at jeg fikk en nøyaktig og presis boks i 
+                            samsvar med mine ønsker og behov.   
+                            Denne tilnærmingen gjorde det mulig for meg å redigere og validere designen min før jeg 
+                            gikk videre med produksjonen. Det resulterte i en boks som var i samsvar med mine spesifikasjoner 
+                            og sikret at jeg ikke brukte unødvendig mye plexiglass hvis det skulle være nødvendig med endringer eller 
+                            justeringer.
+                            Jeg gjorde endringer på tykkelsen til 0,025 mm og brukte plexiglass med en tykkelse på 2 mm.
+                            Etter å ha fullført redigeringen av boksdesignen, eksporterte jeg filen til PDF-format.
+                            </p>
+                            <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                            <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+
+                        </li>
+                        <li>
+                            <p>3D-printing 3D-modeller for LCD-skjermen
+                            jeg har også laget 3D-modeller spesifikt tilpasset LCD-skjermen i vannplantesystemet. 
+                            Disse modellene er designet med hensyn til størrelsen og formen til LCD-skjermen og er 
+                            designart for å passe perfekt på plexiglassboksen til systemet. og årsaken til det var 
+                            fordi de bidrar til å skape et ryddig og profesjonelt utseende, samtidig som de sikrer 
+                            at LCD-skjermen er på riktig sted og trygt festet i systemet.
+                            </p>
+                            <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                            <p>
+                            Jeg har laget en 3D-modelle  for en plastinnsats og printet den ut. Formålet med denne 
+                            plastinserten var å sikre at plexiglassboksen kunne bli lukket og forseglet fra begge sider,</p>
+                            <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                            <p>men jeg fant ikke skruerne som er 60 mm, så brukte jeg de plastinserten istenfor de andre</p>
+                            <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+   
+                        </li>
+                        <li>
+                            <p> Vinylkutting jeg har brukt vinylkuttingsteknologi for å lage en tilpasset logo til systemet mitt. 
+                                Ved hjelp av denne teknologien kunne jeg skape en unik og personlig logo som kunne plasseres 
+                                på plexiglassboksen og på 3D modellen. Dette ga meg muligheten til å legge mitt personlige preg 
+                                på vannplantesystemet mitt og skape noe unikt. programmet som jeg brukte var Cricut Design Space.</p>
+                        </li>
+                        <h4> Videreutvikling (Ting jeg ikke har fått mulighet til å lage)</h4>
+                    <p>Her som dere ser jeg ville bruke RGB-LED og en temperature sensor med systemet, Jeg kunne ikke bruke TMP36 Analog 
+                        temperatursensoren i systemet mitt på grunn av at den ble raskt varm under drift, så valgte jeg å utforske 
+                        alternative temperatursensorer som er bedre egnet for mitt prosjekt. Jeg søkte etter en sensor som kan levere nøyaktige 
+                        temperaturavlesninger uten å generere uønsket varme som kan påvirke ytelsen til systemet, men jeg fant ikke den som 
+                        jeg ønska på MackerSpace. men RGB kunne jeg tenke å lage den i videreutvikling.
+                        I videreutviklingen av prosjektet mitt planlegger jeg å bruke en ESP32 og koble den sammen med Arduino for 
+                        å lage et IoT-system. Dette vil gi  muligheten til å kontrollere systemet fra en mobil enhet eller datamaskin 
+                        via internett. (nettsiden) 
+                        jeg  har også planer om å inkludere sensorer for å måle temperatur inne i rommet, 
+                        fuktighet i jorden og vannnivå. Dette vil gi verdifull informasjon om miljøforholdene for planter 
+                        eller andre formål. Ved å bruke ESP32, som er en mikrokontroller med innebygd Wi-Fi-funksjonalitet, 
+                        kan jeg opprette en trådløs forbindelse til internett og etablere kommunikasjon mellom systemet og en ekstern enhet. 
+                        Dette gjør det mulig å overvåke og styre systemet eksternt, selv når man ikke er fysisk tilstede.</p>
+                        <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+
+                <h4> Resultater </h4>
+                    <p> Testingen av systemet ble grundig utført for å evaluere funksjonalitet og resultater. 
+                        En video ble lastet opp på YouTube for å vise resultatene.
+                    </p> 
+                    <p>
+                        Sensoren jeg brukte viser en leseverdi på 0 på (pile nummer 2) når den er utenfor vannbegeret og ikke har tilstrekkelig fuktighet. 
+                        Dette indikerer at sensoren ikke oppdager tilstrekkelig fuktighet i miljøet den er plassert i. Når sensoren er 
+                        nedsenket i vann, stiger leseverdien til 900 (pile nummer 1). Dette viser at sensoren nå oppdager den høyere 
+                        fuktigheten som finnes i vannet. jeg har tatt et skjermbilde av resultatene fra Arduino IDE, og det viser tydelig 
+                        disse leseverdiene. Ved å observere leseverdiene kan du identifisere om sensoren er i riktig miljø med 
+                        tilstrekkelig fuktighet eller ikke. og dette gir meg nyttig informasjon om vannivået og fuktighetsnivået i 
+                        jorden eller miljøet der sensoren er plassert. jeg kan bruke denne informasjonen til å overvåke og kontrollere 
+                        vanningssystemet eller andre prosesser som krever mer nøyaktig fuktighetskontreoll
+                    </p>
+                    <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+                    <h4> Resultater </h4>
+                    <p> Testingen av systemet ble grundig utført for å evaluere funksjonalitet og resultater. 
+                        En video ble lastet opp på YouTube for å vise resultatene.
+                    </p> 
+                    <p>
+                        Problemer under proskjetet.
+                        1- Motorproblemer og manglende strømtilførsel: Motoren jeg brukte var en 12V-motor, mens Arduino-brikken min  
+                        kun opererer med 4.8V. for å løse dette kunne jeg bruke Bruk en spenningsregulator til å konvertere den lavere 
+                        spenningen fra Arduino til en høyere spenning som kreves av motoren eller kunne jeg bruke en separat strømkilde 
+                        som kan levere den nødvendige spenningen til motoren direkte. Du kan koble denne strømkilden til motoren, samtidig 
+                        som du opprettholder tilkoblingen mellom Arduino og motoren for styring og kontroll., og dette jeg har gjørt men 
+                        funka ikke helt med meg.    
+                        2- Tekniske feil i 3D-designen: Det andre problemet du støtte på var en teknisk feil i 3D-designen som hindret 
+                        meg i å flippe LCD-skjermen (16x2). jeg kan løse den i videre utvikling. jeg tenkte først på at den er mulig å 
+                        filppe skjermen 180 grader, men utter at jeg søkte på nett, fikk jeg svar på at det er ikke mulig på (Lcd16*2 )
+                        3- 3D-printing på grunn av overoppheting av USB: Et annet problem du støtte på var at 3D-utskriftsprosessen
+                        stoppet på grunn av at USB-tilkoblingen ble for varm i følge Fahad. løsningen var å bytte printer-usb-en.
+                    </p>
+                    <img class="img-mave" src="../digifab22/Eksamensoppgave/Digi/einkercad_1.png" alt="bilde som viser Tinkercad">
+
+                        
+                        
+                       
+                      
+                        
+                    </ul>
+                    <img class="img-mave" src="../digifab22/bilder/pcb_parts.png"
+                    alt="">
+                    <br>
+                    <br>
+                    <img class="img-mave" src="../digifab22/bilder/schematics.png"
+                    alt="">
+                        
+                   <p>
+                        Jeg fikk hjelp fra Eagle ved å bruke ERC, som sa hva som var "Error" og "Warning"
+                            og den ser silk ut 
+                    </p>
+               
+      
+                
+                    <img class="img-mave" src="../digifab22/PCB_filer/schematics.png"
+                        alt="">
+                        <p>
+                            Her kan dere finne Schematic SCH filen inni pcb_filer .
+                            <a href="https://github.com/Dilbrino/digifab22/tree/main/PCB_filer"> klikk her </a>
+                          
+                          </p>
+                          <p>
+                            jeg brukte autorouter for å flytte på elementene, og slik så det ut etter jeg autoroutet top, og bottom, 
+                        
+                          </p>
+
+                          
+                        <img class="img-mave" src="../digifab22/bilder/ocb_image_2.png"
+                        alt="">
+                        <br>
+                        <img class="img-mave" src="../digifab22/bilder/white_pcb.png"
+                        alt="">
+                        
+                        <p>
+                           på Github siden, står en pcb_filer som innholder BRD lyout og SCH filen. 
+                        
+                          </p>
+                       
+                          
+                                        <h5>Kilder </h5>
+                          
+                             <a href="https://all3dp.com/2/arduino-watering-system-plant-irrigation-project/"> all3dp.com </a>
+                             <br>
+                             <a href="https://no.fmuser.net/content/?5849.html"> Fmuser.net </a>
+                             <a href="https://no.fmuser.net/content/?5849.html"> Fmuser.net </a>
+                             <a href="https://no.fmuser.net/content/?5849.html"> Fmuser.net </a>
+                             <a href="https://no.fmuser.net/content/?5849.html"> Fmuser.net </a>
+
+
+            </article> 
+
+                <div class="share">
+                    <button class="fa fa-brands fa-facebook delingsknapp" aria-label="delings kanpp til facebook"> <i
+                            class="fa-sharp fa-solid fa-share"></i></button>
+                    <button class="fa fa-brands fa-twitter delingsknapp" aria-label="delings kanpp til twitter"> <i
+                            class="fa-sharp fa-solid fa-share"></i></button>
+                    <button class="fa fa fa-brands fa-instagram" aria-label="delings kanpp til Instgram"> <i
+                            class="fa-sharp fa-solid fa-share"></i></button>
+                </div>
+ 
+            </main>
+          
+       
+        <footer class="footer">
+            
+          
+              
+        
+        <section class="btn">
+       
+        <a href="https://hiofmakerspace.slack.com/ssb/redirect">Slack</a>
+        </section>
+        <div class="socialmedia">
+            <h4>Følg oss på sosiale medier </h4>
+                <ul class="socialmedia-list">
+    
+                    <li> <a href="https://www.facebook.com/" class="fa fa-brands fa-facebook" aria-label=" kanpp til facebook"></a></a></li>
+
+                    <li> <a href="https://www.instagram.com/" class="fa fa-brands fa-twitter" aria-label=" kanpp til twitter"></a></a></li>
+                    <li><a href="https://no.pinterest.com/" class="fa fa-brands fa-pinterest" aria-label=" kanpp til pinterest"></a></a> </li>
+                 </ul>
+        </div>
+            <p> Dilbrin Hasan || 2022 DigiFab </p>
+            <p> E-post: dilbrinh@hiof.no</p>
+    
+
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
