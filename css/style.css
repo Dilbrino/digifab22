@@ -294,20 +294,6 @@ footer p {
 .topnav .icon {
 	display: none;
 }
-.video-container {
-	
-	display: contents;
-	height: 0;
-	overflow: hidden;
-  }
-  
-  .video-container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-  }
 
 
 
