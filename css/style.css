@@ -237,6 +237,9 @@ article p {
 li:hover {
 	transform: rotate(360deg);
 }
+li > p{
+	display: grid;
+}
 
 h1 {
 	transition: transform 1s;
