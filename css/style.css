@@ -294,14 +294,14 @@ footer p {
 .topnav .icon {
 	display: none;
 }
-.video-container {
+.video-containe {
 	position: relative;
 	padding-bottom: 56.25%; /* Setter høyde/bredde-forhold til 16:9 */
 	height: 0;
 	overflow: hidden;
   }
   
-  .video-container iframe {
+  .video-containe iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
