@@ -296,7 +296,7 @@ footer p {
 }
 .video-containe {
 	position: relative;
-	padding-bottom: 56.25%; /* Setter høyde/bredde-forhold til 16:9 */
+	padding-bottom: 50%; /* Setter høyde/bredde-forhold til 16:9 */
 	height: 0;
 	overflow: hidden;
   }
